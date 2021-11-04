@@ -9,6 +9,26 @@ package lab3p2_carlosbarahona;
  *
  * @author Admin
  */
-public class CartasEpicas {
+public class CartasEpicas extends Cartas {
+    private int ataque;
+
+    public CartasEpicas(int ataque, int costoElixir, int velocidad, String nombre) {
+        super(costoElixir, velocidad, nombre);
+        this.ataque = ataque;
+    }
+
+    public int getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    @Override
+    public String toString() {
+        return "CartasEpicas{" + "ataque=" + ataque + '}';
+    }
+    
     
 }
